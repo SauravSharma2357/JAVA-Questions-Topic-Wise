@@ -12,7 +12,7 @@ public class Subsequence {
 	}
 	public static void SubSeq(String str, String ans) {
 		if(str.length()==0) {
-			System.out.println(ans);
+			System.out.print(ans+" ");
 			return;
 		}
 		char ch = str.charAt(0);

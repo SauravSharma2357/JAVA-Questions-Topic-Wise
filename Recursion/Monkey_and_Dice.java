@@ -9,21 +9,20 @@ public class Monkey_and_Dice {
 		Scanner kc = new Scanner(System.in);
 		int N = kc.nextInt();
 		int T = kc.nextInt();
-		System.out.println(Monkey(N,T,0,""));
+		Monkey(N,T,0,"");
 	}
-	public static int Monkey(int n, int t, int curr, String ans) {
+	public static void Monkey(int n, int t, int curr, String ans) {
 		if(curr>t) {
-			return 0;
+			return ;
 		}
 		if(curr==t) {
 			System.out.println(ans+" ");
-			return 1;
+			return ;
 		}
-		int count=0;
+		
 		for(int dice=1;dice<=n;dice++) {
-			count=count+Monkey(n,t,curr+dice,ans+dice);
+			Monkey(n,t,curr+dice,ans+dice);
 		}
-		return count;
 	}
 
 }

@@ -13,7 +13,7 @@ public class Maze_Path {
 	}
 	public static void Maze(int er, int ec, int cr, int cc, String ans) {
 		if(cr==er && cc==ec) {
-			System.out.println(ans);
+			System.out.print(ans+" ");
 			return;
 		}
 		if(cr>er || cc>ec) {
